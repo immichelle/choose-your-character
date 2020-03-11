@@ -58,8 +58,8 @@ export default class App extends Component {
     // newMems[index].isOpen = !newMems[index].isOpen;
     console.log(index)
 
-    //  const newMem = _.set(this.state.members, `[${index}].isOpen`, !this.state.members[index].isOpen)
-    const newMem = _.set(this.state, members[index].isOpen, !this.state.members[index].isOpen)
+     const newMem = _.set(this.state.members, `[${index}].isOpen`, !this.state.members[index].isOpen)
+  
 
     this.setState({members: newMem})//lodash co ham set gia tri
   }
